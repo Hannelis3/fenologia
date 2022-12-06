@@ -40,7 +40,7 @@ planilha.rev <- as_tibble(planilha.rev)
 
 planilha.coor <- as_tibble(planilha.coor) 
 
-#line graph of publications over time
+#line graph of publications over time-------------------------------------------
 
 artigos.tempo <- 
   planilha.rev  %>%  
@@ -102,7 +102,7 @@ source <- ggplot(database, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=databa
 
 source
 
-# map---------------------------------------------------------------------------
+# mapa--------------------------------------------------------------------------
 
 subset.rev <- planilha.rev %>% select(1, 9)
 
